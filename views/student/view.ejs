@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/style.css"/>
+    <title style="text-align: center">Result Management Application</title>
+</head>
+<body>
+  <a href="/" class="btn btn-warning" id="logOut" style="margin-top:0.5em;">LogOut</a>  
+  <a href="/student/login" class="btn btn-primary" style="margin-top:5px;">Back</a>
+<h5 class="find-result">Result</h5>
+<div class="studentTable">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Roll No:</th>
+              <th scope="col">Name:</th>       
+              <th scope="col">Date of Birth</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody class ="top-body">
+    <tr class="head">
+        <td><%= rollNumber.roll %></td>
+        <td><%= rollNumber.name %></td>
+        <td><%= rollNumber.dob %> </td>
+        <td><%= rollNumber.score %></td>
+    </tr>
+        </tbody>
+    </table>   
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css"/>
+    
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<a href="/teacher/teacherOption" class="btn btn-primary" style="margin-top:5px;">Back</a><br><br>
+<span>Total <%= studentsData.length%> students</span>
+<h5 class="addStudent">All Students Data</h5>
+<div class="tableStudentData">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody class ="top-body">
+        <%  studentsData.forEach(element => { %>
+            <tr class="head">
+                <td><%= element.roll %></td>
+                <td><%= element.name %></td>               
+                <td><%= element.dob %></td>
+                <td><%= element.score %></td> 
+                <td>
+                  <a href="/teacher/editStudentData/<%= element._id %> "><i class="fas fa-pen" id="icon"></i></a>
+                  <a href="/teacher/delete/<%= element._id %> "><i class="fas fa-trash" id="icon"></i></a>
+                </td>
+              </tr>
+        <%}) %>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

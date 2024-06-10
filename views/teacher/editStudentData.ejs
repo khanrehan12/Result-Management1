@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/style.css"/>
+    <title style="text-align: center">Result Management Application</title>
+</head>
+<body>
+<a href="/teacher/viewAllStudentData" class="btn btn-primary" style="margin-top:5px;">Back</a>
+<h5 class="addStudent">Editing Data for Student <%= findData.name %> </h5>
+<form method="POST" autocomplete="off">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name : </label>
+      <input type="text" name="name" required class="form-control" value="<%= findData.name  %> " id="exampleInputEmail1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Roll No. : </label>
+        <input type="number" name="roll" value="<%= findData.roll  %> " required class="form-control" id="exampleInputEmail1" >
+      </div>     
+     
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Date of Birth : </label>
+        <input type="date" name="dob" value="<%= findData.dob  %> " required class="form-control" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Score : </label>
+        <input type="number" name="score" value="<%= findData.score  %> " required class="form-control" id="exampleInputEmail1">
+      </div>
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
+</body>
+</html>

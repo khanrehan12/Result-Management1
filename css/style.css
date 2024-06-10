@@ -1,0 +1,152 @@
+body{
+    margin-left: 10px;
+  }
+  .navbar{
+    background-color: rgb(145, 162, 219);
+    margin-left: -10px; 
+  }
+  .text{
+    text-align: center;
+    margin-top: 7%;
+    font-weight: bold;
+  }
+  .navbar a.navbar-brand{
+    font-family: "Arial";
+    color: white;
+    font-weight: bold;
+    margin-left: 40%;
+    text-decoration: none;
+    
+   }
+.teacherlogin{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+
+}
+
+.btn.btn-default{
+color: white;
+}
+
+.teacher-Login{
+  text-align: center;
+  margin:5em 0px 0px 0px;
+}
+.btn{
+   border-radius: 0px;
+    margin-right: 5px;  
+    font-weight: bold;
+}
+.find-result{
+  text-align: center;
+}
+.studentLogin {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ #logOut{
+  position: fixed; right: 0; top: 0
+ }
+ .teacherOption{
+  position: fixed;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .teacherOption a{
+  color:white;
+ }
+ .addStudent{
+  text-align: center;
+ }
+ .teacherAdd{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+ }
+ .studentTable{
+  margin:3em 0em 0em 0em;
+ }
+ #icon{
+  color:black;
+  margin: 0px 6px;
+ }
+ #icon:hover{
+  transition: transform 0.3s ease;
+  transform: scale(1.3);
+ }
+ #index-btn a{
+  text-decoration: none;
+ }
+
+ .container-fluid a{
+  color:white;
+ }
+
+ .btn.btn-primary:hover {
+  transition: transform 0.4s ease;
+  transform: scale(1.1);
+}
+.btn.btn-success:hover{
+  transition: transform 0.4s ease;
+  transform: scale(1.1);
+}
+.btn.btn-default:hover{
+  transition: transform 0.4s ease;
+  transform: scale(1.1);
+}
+.top-body{
+  background: rgba(0, 123, 255, .25);
+}
+.head{
+  background: #e9ecef;
+}
+
+.alert {
+  border: 1px solid #ccc; 
+  border-radius: 0px;
+  background-color: #f8d7da; 
+  color: #721c24; 
+  font-family: Arial, sans-serif; 
+  max-width: 300px; 
+  margin: auto; 
+}
+
+.alert.alert-danger.alert-dismissible {
+  position: absolute;
+  margin-left: 40%;
+  margin-top:0.5em;
+}
+#back-btn{
+  position: fixed;
+  top: 4em;
+  left: 8px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.login-techPage{
+  position: fixed;
+  top: 6em;
+  left: 8px;
+  z-index: 999; /* Ensure it's above other content */
+}
+.login-std{
+  position: fixed;
+  top: 10em;
+  left: 8px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.addstd{
+  color:rgb(199, 22, 22);
+}
+.form-control{
+  border-radius: 0px;
+}
